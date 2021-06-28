@@ -1,0 +1,89 @@
+.main{
+    &__product{
+        &--color{
+            display: flex;
+            align-items: center;
+            margin-bottom: 25px;
+        }
+
+        &--select_color{
+            display: flex;
+            align-items: center;
+
+            span{
+                width: 20px;
+                height: 20px;
+                border-radius: 50%;
+                cursor: pointer;
+                transition: ease 0.5s;
+
+                position: relative;
+                &:not(:last-child){
+                    margin: 0 17px 0 0;
+                }
+
+                
+                &:hover{
+                    background: #fff;
+                }
+                &.main__product--white{
+                    &:hover{
+                        background: rgb(196, 196, 196);
+                    }
+                }
+                &::after{
+                    content: '';
+                    width: 12px;
+                    height: 12px;
+                    display: block;
+                    border-radius: 50%;
+                    position: absolute;
+                    top: 50%;
+                    left: 50%;
+                    transform: translate(-50%, -50%);
+                }
+            }
+        }
+
+        &--white{
+            background: #ffffff;
+            border: 1px solid rgb(238, 238, 238);
+
+            &::after{
+                background: #ffffff;
+            }
+
+        }
+
+        &--red{
+            background: #FC3E39;
+            border: 2px solid #FC3E39;
+
+            &::after{
+                background: #FC3E39;
+            }
+        }
+        &--pink{
+            background: #ffa7a3;
+            border: 2px solid #ffa7a3;
+
+            &::after{
+                background: #ffa7a3;
+            }
+        }
+        &--black{
+            background: #171717;
+            border: 2px solid #171717;
+            &::after{
+                background: #171717;
+            }
+        }
+        &--copper{
+            background: #faa165;
+            border: 2px solid #faa165;
+            &::after{
+                background: #faa165;
+            }
+        }
+    }
+}

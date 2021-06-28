@@ -1,0 +1,95 @@
+.product-listing__products__card{
+    display: flex;
+    position: relative;
+    border-bottom: 3px #f6f7f8 solid;
+    &--image{
+        position: relative;
+        border: 3px solid #f6f7f8;
+        border-radius: 5px;
+        min-width: 250px;
+        height: 250px;
+        display: flex;
+        span {
+            font-size: 0.8em;
+            top: 10px;
+            left: 10px;
+            position: absolute;
+            background-color: #ff4858;
+            color: #fff;
+            padding: 2px 7px 1px;
+        }
+        img{
+            margin: auto;
+            height: auto;
+            max-height: 200px;
+            max-width: 200px;
+        }
+    }
+    &__details{
+        padding-left: 30px;
+        display: flex;
+        min-height: 278px;
+        flex-direction: column;
+        align-items: flex-start;
+        &--title{
+            font-size: 1.5em;
+            font-weight: 600;
+        }
+        &--review{
+            padding: 20px 0;
+            color: #C1C8CE; 
+            display: flex;
+            align-items: baseline;
+            
+            .glow{
+                width: 1.01em;
+                color: #FFC600;
+            }
+
+        }
+        hr{
+            border-top: 3px #f6f7f8 solid;
+            border-left: 0;
+            margin: 0;
+            width: 100%;
+            max-width: 400px;
+           
+        }
+        &--price{
+            display: block;
+            color: #FF4858;
+            font-size: 1.5em;
+            padding: 20px 0;
+            &--before{
+                color: #C1C8CE;
+                text-decoration: line-through;
+                padding-left: 10px;
+            }
+        }
+
+        p{
+            padding: 10px 0;
+            text-align: justify;
+        }
+        footer{
+            padding: 10px 0 20px;
+            display: flex;
+            button{
+                border: 0;
+                background-color: #b3dbff;
+                color: #33A0FF;
+                border-radius: 5px;
+                padding: 10px;
+                font-size: 1em;
+                margin-right: 15px;
+            }
+            #product-listing--add-to-cart-btn{
+                display: flex;
+                align-items: baseline;
+                i{
+                    padding-right:10px;
+                }
+            }
+        }
+    }
+}
